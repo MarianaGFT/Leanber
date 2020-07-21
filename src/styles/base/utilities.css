@@ -1,0 +1,12 @@
+.center {
+  text-align: center;
+  background: linear-gradient(var(--gradient-light), var(--gradient-royal), var(--background-dark-blue));
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
