@@ -21,6 +21,7 @@ const Ul = styled.div`
   width: 350px;
   padding-top: 3.5rem;
   transition: transform 0.3s ease-in-out;
+  z-index: 20;
 
   a {
     display: block;
@@ -43,19 +44,21 @@ const Ul = styled.div`
     top: 0;
     right: 0;
     height: 100vh;
-    width: 200px;
+    width: 100%;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
+    z-index: 20;
 
     span {
-      font-size: 15px;
+      font-size: 18px;
       color: #ffffff;
+      font-weight: bold;
     }
 
     a {
       color: #fff;
       line-height: 90px;
-      text-align: left;
+      text-align: center;
       padding: 10px 13px;
     }
 

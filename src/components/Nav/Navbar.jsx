@@ -6,16 +6,19 @@ import LogoLeanberNombre from "../../assets/Logo-Leanber-nombre.png";
 import HeaderImg from "../../assets/Background-Header.png";
 
 const Nav = styled.nav`
+  background-color: var(--gradient-royal);
   width: 100%;
   height: 90px;
   border-bottom: 2px solid #f1f1f1;
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
+  position: fixed;
 
   @media (max-width: 768px) {
+    background-color: var(--gradient-royal);
     width: 100%;
-    height: 60px;
+    height: 70px;
     border-bottom: 2px solid #f1f1f1;
     padding: 0 20px;
     display: flex;
@@ -39,6 +42,15 @@ const NavbarContainer = styled.div`
     margin-bottom: 15px;
   }
 
+  .header-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    padding-top: 85px;
+  }
+
   @media (max-width: 768px) {
     width: 100%;
     height: 100%;
@@ -57,9 +69,9 @@ const NavbarContainer = styled.div`
     }
 
     .header-image {
-      position: absolute;
-      top: 0;
-      left: 0;
+      width: 100%;
+      height: auto;
+      padding-top: 65px;
     }
   }
 `;
@@ -68,9 +80,9 @@ const Navbar = () => {
   return (
     <Nav>
       <NavbarContainer className='container-navbar'>
-        <img className='header-image' src={HeaderImg} alt='Imagen Header'></img>
         <img className='leanber-logo' src={LogoLeanber} alt='Logo Leanber'></img>
         <img className='leanber-name' src={LogoLeanberNombre} alt='Nombre Empresa'></img>
+        <img className='header-image' src={HeaderImg} alt=''></img>
       </NavbarContainer>
       <Burger />
     </Nav>
