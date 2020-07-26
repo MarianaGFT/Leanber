@@ -91,7 +91,7 @@ const RightNav = ({ open }) => {
         <img src={Home} alt='Home icon'></img> <span>INICIO </span>
       </a>
       <a href='www.facebook.com'>
-        <img src={User} alt='User icon'></img> <span> NOSOTROS </span>
+        <img src={User} alt='User icon'></img> <span> SERVICIOS </span>
       </a>
       <a href='www.facebook.com'>
         <img src={Users} alt='Users icon'></img> <span> COMUNIDAD </span>
